@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uview-ui/components/u-collapse/u-collapse"],{"338d":function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var u={name:"u-collapse",props:{accordion:{type:Boolean,default:!0},headStyle:{type:Object,default:function(){return{}}},bodyStyle:{type:Object,default:function(){return{}}},itemStyle:{type:Object,default:function(){return{}}},arrow:{type:Boolean,default:!0},arrowColor:{type:String,default:"#909399"},hoverClass:{type:String,default:"u-hover-class"}},created:function(){this.childrens=[]},data:function(){return{}},methods:{init:function(){this.childrens.forEach((function(t,n){t.init()}))},onChange:function(){var t=[];this.childrens.forEach((function(n,e){n.isShow&&t.push(n.nameSync)})),this.accordion&&(t=t.join("")),this.$emit("change",t)}}};n.default=u},"69ad":function(t,n,e){"use strict";e.r(n);var u=e("f2fe"),o=e("bebb");for(var r in o)"default"!==r&&function(t){e.d(n,t,(function(){return o[t]}))}(r);e("db82");var a,c=e("f0c5"),i=Object(c["a"])(o["default"],u["b"],u["c"],!1,null,"3ad21493",null,!1,u["a"],a);n["default"]=i.exports},bebb:function(t,n,e){"use strict";e.r(n);var u=e("338d"),o=e.n(u);for(var r in u)"default"!==r&&function(t){e.d(n,t,(function(){return u[t]}))}(r);n["default"]=o.a},d5f3:function(t,n,e){},db82:function(t,n,e){"use strict";var u=e("d5f3"),o=e.n(u);o.a},f2fe:function(t,n,e){"use strict";var u;e.d(n,"b",(function(){return o})),e.d(n,"c",(function(){return r})),e.d(n,"a",(function(){return u}));var o=function(){var t=this,n=t.$createElement;t._self._c},r=[]}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uview-ui/components/u-collapse/u-collapse-create-component',
+    {
+        'uview-ui/components/u-collapse/u-collapse-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('f266')['createComponent'](__webpack_require__("69ad"))
+        })
+    },
+    [['uview-ui/components/u-collapse/u-collapse-create-component']]
+]);

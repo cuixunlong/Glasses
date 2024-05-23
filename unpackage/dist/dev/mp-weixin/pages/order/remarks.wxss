@@ -1,0 +1,32 @@
+.remarks {
+  padding: 12px 15px;
+}
+.remarks .remarks_input {
+  background-color: #F7F7F7;
+  height: 133px;
+  border-radius: 8px;
+  position: relative;
+}
+.remarks .remarks_input .u-input__input {
+  padding: 8px;
+}
+.remarks .remarks_input .number {
+  display: flex;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.remarks .remarks_input .number .remarks_length {
+  color: #8F9399;
+}
+.remarks .finish {
+  margin-top: 24px;
+  background-color: #0E1E75;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+  border-radius: 16px;
+  font-size: 14px;
+}
+

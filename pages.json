@@ -1,0 +1,308 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/detail",
+			"style": {
+				"navigationBarTitleText": "详情页",
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/index/sameDay",
+			"style": {
+				"navigationBarTitleText": "当日配送"
+			}
+		},
+		{
+			"path": "pages/index/activity",
+			"style": {
+				"navigationBarTitleText": "活动资讯",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/index/invoice/invoice",
+			"style": {
+				"navigationBarTitleText": "发票管理",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/index/invoice/company",
+			"style": {
+				"navigationBarTitleText": "公司发票",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/index/invoice/personal",
+			"style": {
+				"navigationBarTitleText": "个人发票",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/login/userAgreen",
+			"style": {
+				"navigationBarTitleText": "用户协议",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/sort/sort",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "pages/order/usCoupon",
+			"style": {
+				"navigationBarTitleText": "优惠卷"
+			}
+		},
+		{
+			"path": "pages/order/payment",
+			"style": {
+				"navigationBarTitleText": "收银台",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/order/pay_success",
+			"style": {
+				"navigationBarTitleText": "支付成功",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/order/orderDetails",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/order/confirm_order",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/order/remarks",
+			"style": {
+				"navigationBarTitleText": "备注",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/user_info",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/myInfo",
+			"style": {
+				"navigationBarTitleText": "我的消息",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/memberCars",
+			"style": {
+				"navigationBarTitleText": "会员卡",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/carsDetail",
+			"style": {
+				"navigationBarTitleText": "会员卡",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/changePhone",
+			"style": {
+				"navigationBarTitleText": "更换手机号",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/detailed",
+			"style": {
+				"navigationBarTitleText": "明细",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/anniversary/jinianDay",
+			"style": {
+				"navigationBarTitleText": "纪念日",
+				"backgroundColor": "#F3F4F5"
+
+			}
+		},
+		{
+			"path": "pages/user_info/anniversary/newDay",
+			"style": {
+				"navigationBarTitleText": "新增纪念日"
+			}
+		},
+		{
+			"path": "pages/user_info/anniversary/editDay",
+			"style": {
+				"navigationBarTitleText": "修改纪念日"
+			}
+		},
+		{
+			"path": "pages/user_info/address/address",
+			"style": {
+				"navigationBarTitleText": "管理地址",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/address/editAddress",
+			"style": {
+				"navigationBarTitleText": "编辑收货地址",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/address/newAddress",
+			"style": {
+				"navigationBarTitleText": "新建收货地址",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/commonProblem",
+			"style": {
+				"navigationBarTitleText": "常见问题",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/sendProblem",
+			"style": {
+				"navigationBarTitleText": "配送问题",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠劵",
+				"backgroundColor": "#F3F4F5"
+			}
+		},
+		{
+			"path": "pages/user_info/wallet",
+			"style": {
+				"navigationBarTitleText": "账户余额",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/user_data",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/invitation",
+			"style": {
+				"navigationBarTitleText": "邀请有礼",
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/invita",
+			"style": {
+				"navigationBarTitleText": "邀请记录",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user_info/integral",
+			"style": {
+				"navigationBarTitleText": "我的积分",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path" : "pages/index/book/book",
+			"style" : 
+			{
+				"navigationBarTitleText": "预约服务",
+				"backgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#BFC4CC",
+		"selectedColor": "#0E1E75",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabBar/home.png",
+				"selectedIconPath": "static/tabBar/home_select.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/sort/sort",
+				"iconPath": "static/tabBar/sort.png",
+				"selectedIconPath": "static/tabBar/sort_select.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/tabBar/order.png",
+				"selectedIconPath": "static/tabBar/order_select.png",
+				"text": "消费记录"
+			},
+			{
+				"pagePath": "pages/user_info/user_info",
+				"iconPath": "static/tabBar/user_info.png",
+				"selectedIconPath": "static/tabBar/user_info_select.png",
+				"text": "我的"
+			}
+		]
+	}
+}

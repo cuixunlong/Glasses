@@ -1,0 +1,49 @@
+page {
+  background-color: #FFFFFF;
+}
+.wallet {
+  padding: 0 15px;
+}
+.wallet .wallet_money {
+  background-image: url(/static/user_info/wallet_bg.png);
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 12px rgba(14, 30, 117, 0.2);
+  height: 180px;
+  margin-top: 20px;
+  padding: 12px;
+  color: #0E1E75;
+  font-size: 16px;
+  position: relative;
+  border-radius: 8px;
+}
+.wallet .wallet_money .balance {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.wallet .wallet_money .wallet_money_number {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.wallet .wallet_money .wallet_money_give {
+  font-size: 12px;
+  margin-top: 23px;
+}
+.wallet .wallet_btn {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #0E1E75;
+  border-radius: 18px;
+  margin-top: 32px;
+}
+

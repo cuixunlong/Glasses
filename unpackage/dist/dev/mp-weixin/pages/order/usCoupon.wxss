@@ -1,0 +1,82 @@
+page {
+  background-color: #F3F4F5;
+  letter-spacing: 0.1px;
+}
+.coupon .coupon_list {
+  height: auto;
+  overflow: hidden;
+  padding: 0 15px;
+  margin-top: 15px;
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
+.coupon .coupon_list .invalid_coupon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAADIAgMAAABpMeqdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURd3d3uDg4f///8PDxHFK0HcAAAACdFJOUwKDMBR9IAAAAWZJREFUeNrt3aFtA0EQhtGxAiKZBEYyMXcTuTpSgptwSggJNzDwLUkLLsGlBJhal5OzBdxKkVYjvcEHHtj76RexKZ3uGH/3Mi28IWJV0mhvEes82nv0ewjlVLXbaflT2CXSXmLfTXuu2rfF2mt0w5axag+LtT8dtaVqpxza4YFdJdF+PLRPSbTHtrntrD03TkJfbWn8yTprP2fscxrt2LS2vbXlK16nPNryPdHS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS/uOlqlvmKofmqrKmKt7mqgnnKjXnqmDnKoynqrePVXto0O47T0LLKFxj1017qtrtYu0lNom0Q6w7z23D4N7nAcmjvc0fv6fRDvELwWT1mW8osOcAAAAASUVORK5CYII=) !important;
+}
+.coupon .coupon_list .invalid_coupon .condition {
+  color: #C3C3C4 !important;
+}
+.coupon .coupon_list .coupon_item {
+  width: 100%;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAADICAMAAAAjgfI8AAAAxlBMVEUAAAAEGHYOHXT///////////8NHXQNHXQNHXT///8MHXUNHHQMHHT///////////////8NHXQOHXUMHXT///////////8MG3P///8HHXQAFXL///8NHXX///8OHXX///8OHXQOHnX///////8NHnT///8MHHUKHXT///8IGXMJGnQKGXX///////8AHID///////////////////////////////////8OHXX///8OHXT///////8MHnX///////////8OHnVEraN9AAAAQHRSTlMAEPPxMx7+7smwe3RIDvbt3cC4joRlWCglIgsI+ufd0qiSi3FeQj4zIB8cGRgKCQL51sfBtaeinJaUhH13ZloptEfCJQAABGVJREFUeNrs2d1KQlEYhOGvtrZT26lZlBr9WWZFERRB0M+a+7+plE5EtuvYcea5hpePYa1YaH69Fcm23DiyRthwZb/zGP+qVjIBs8gagsDVS8w9XyZT0IisKRjsx9xHMgknkfUNCoOI32QaWpF1BArnT/GZTMPrODJ29sChHb1kIiaR0QaJfhwmE9GtMkd2FyTKSCbjONa6Bg0nq+Qu1jhgWbJOVkwxi1qnNLPAyarpnUWN4QWIOFktRc02mDLdWCer56ZaeSsYgIuTldOdVEvBdkqQcbKK3n8azRg93N+S/NI6WVsAKScrC6ScrCyQcrKyQMrJygIpJysLpJysLJBysrJAysnKAiknKwuknKwskHKyskDKycoCKScrC6ScrCyQcrKyQMrJygIpJysLpJysLJBysrJAysnKAiknKwuknKwskHKyskDKycoCKScrC6ScrCyQcrKyQMrJ/rFLBzQAAAAIwrLZv5Q5GDzDtQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRlzy4d0AAAACAIy2b/UuZg8AzXGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVGlRltQZVWa1BVVZrUJXVerv1upJAGAZxfFZ3a83FTrrawU4EUVlSEEV9eZ/7v6mkIIjc93PjzO8a/gwTpJysrCDlZGUFKScrK0g5WVlBysnKClJOVlaQcrKygpSTFTQatGWFx9ub64Pg42TlzCcP+FEMe0HGyar5OMEvxVtwcbJadkv80XANrZOV8lRhjelZEHGySuYLrHXEtLNOVkh/hg7NVtBwskIm6HQYNNBPJmJviU4FzTXo4TyZiBYZO0GixlUyDf0lMgqWN/uOWTINL8iqg8LpHfCaTEILbMAzuMTKIJmCEllNMKjxZZxMwAJZ0yBwcYxv1fh5lGzDIa+If257f3iPlU+USX6AX7r/KgAAAABJRU5ErkJggg==);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 100px;
+}
+.coupon .coupon_list .coupon_item .coupon_image {
+  width: 17.3%;
+  margin-left: 8px;
+}
+.coupon .coupon_list .coupon_item .info {
+  flex: 7;
+  overflow: hidden;
+  font-size: 12px;
+  margin-left: 8px;
+  color: #8F9399;
+}
+.coupon .coupon_list .coupon_item .info .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #303133;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.coupon .coupon_list .coupon_item .info .type {
+  margin-top: 4px;
+}
+.coupon .coupon_list .coupon_item .state {
+  font-size: 14px;
+  color: #50A4FF;
+  width: 26.6%;
+}
+.coupon .coupon_list .coupon_item .state .money {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+}
+.coupon .coupon_list .coupon_item .state .money .condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 10px;
+  border-radius: 10px;
+  color: #7084C3;
+  background-color: #FFFFFF;
+  font-weight: normal;
+}
+.coupon .coupon_list .coupon_item .state .money .coupon_desc {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: normal;
+}
+

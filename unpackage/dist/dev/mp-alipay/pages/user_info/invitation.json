@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "邀请有礼",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-modal": "/uview-ui/components/u-modal/u-modal",
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-image": "/uview-ui/components/u-image/u-image"
+  }
+}

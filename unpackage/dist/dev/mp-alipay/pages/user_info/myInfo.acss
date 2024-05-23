@@ -1,0 +1,47 @@
+page {
+  background-color: #F3F4F5;
+}
+.my_info {
+  height: auto;
+  overflow: hidden;
+  background: #F3F4F5;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.my_info .info_list {
+  height: auto;
+  overflow: hidden;
+}
+.my_info .info_list .info_item {
+  margin-top: 24px;
+  padding: 0 15px;
+}
+.my_info .info_list .info_item .create_time {
+  display: flex;
+  justify-content: center;
+}
+.my_info .info_list .info_item .create_time .time {
+  color: #919499;
+  font-size: 12px;
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  padding: 2px 8px;
+  height: 21px;
+}
+.my_info .info_list .info_item .uinfo_state {
+  padding: 12px;
+  margin-top: 12px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  color: #919499;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.my_info .info_list .info_item .uinfo_state .state_title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+

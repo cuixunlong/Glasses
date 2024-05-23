@@ -1,0 +1,30 @@
+.new_day .day_item {
+  padding: 0 15px;
+}
+.new_day .day_item .day_title {
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 12px;
+}
+.new_day .day_item .day_title .u-input__input {
+  min-height: 0 !important;
+}
+.new_day .day_item .time {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  color: #919499;
+  font-size: 14px;
+  padding-left: 12px;
+}
+.new_day .day_item .time .title {
+  flex: 7;
+  color: #303133;
+  font-size: 16px;
+  font-weight: bold;
+}
+.new_day .day_item .time .choose {
+  margin-right: 8px;
+}
+

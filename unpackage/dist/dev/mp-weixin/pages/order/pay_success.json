@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "支付成功",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-image": "/uview-ui/components/u-image/u-image"
+  }
+}

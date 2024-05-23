@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "确认订单",
+  "backgroundColor": "#F3F4F5",
+  "usingComponents": {
+    "u-select": "/uview-ui/components/u-select/u-select",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

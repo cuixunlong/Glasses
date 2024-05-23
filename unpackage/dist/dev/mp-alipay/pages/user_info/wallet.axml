@@ -1,0 +1,1 @@
+<view class="wallet"><view class="wallet_money"><view class="balance"><view>钱包余额</view><navigator url="detailed" hover-class="none"><view>明细</view></navigator></view><view class="wallet_money_number">{{money+"元"}}</view></view><navigator url="memberCars" hover-class="none"><view class="wallet_btn">购买会员卡</view></navigator></view>

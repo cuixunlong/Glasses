@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "常见问题",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

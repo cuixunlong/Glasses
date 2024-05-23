@@ -1,0 +1,203 @@
+page {
+  background-color: #FFFFFF;
+}
+.user_info .user_info_top {
+  background-image: url(https://z3.ax1x.com/2021/09/07/hIMDQf.png);
+  background-size: 100% 100%;
+}
+.user_info .user_info_top .top_head {
+  position: relative;
+  padding: 0 20px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+}
+.user_info .user_info_top .top_head .u-image {
+  display: flex;
+  justify-content: center;
+}
+.user_info .user_info_top .top_head .u-image image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.user_info .user_info_top .top_head .user_name {
+  color: #303133;
+  font-size: 20px;
+  margin: 4px 0;
+}
+.user_info .user_info_top .top_head .user_num {
+  color: #8F9399;
+  font-size: 12px;
+}
+.user_info .user_info_top .top_head .set_of {
+  position: absolute;
+  top: 10px;
+  right: 21px;
+}
+.user_info .user_info_top .top_head .set_of image {
+  width: 20px;
+}
+.user_info .top_content {
+  width: 100%;
+  padding: 0 15px;
+}
+.user_info .top_content .top_list {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 37px;
+  padding: 18px 0;
+  text-align: center;
+  color: #0E1E75;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 40, 255, 0.32);
+  border-radius: 10px;
+  font-size: 16px;
+}
+.user_info .top_content .top_list .top_item {
+  flex: 1;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 33.33%;
+}
+.user_info .top_content .top_list .top_item .number {
+  font-size: 16px;
+  color: #0E1E75;
+  margin-top: 4px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user_info .top_content .top_list .top_item .right {
+  width: 1px;
+  height: 40px;
+  background-color: #ECEEED;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.user_info .top_content .top_list .top_item .name {
+  font-size: 12px;
+  color: #7286BF;
+}
+.user_info .user_info_list {
+  margin-top: 25px;
+  border-radius: 8px;
+  padding-bottom: 12px;
+}
+.user_info .user_info_list .customer {
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 8px 0;
+  margin: 0 15px;
+  align-items: center;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.user_info .user_info_list .customer image {
+  width: 20px;
+}
+.user_info .user_info_list .customer .item_title {
+  flex: 1;
+  font-size: 14px;
+  color: #303133;
+  margin-left: 8px;
+  text-align: left;
+}
+.user_info .user_info_list .customer_number {
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+  margin: 0 15px;
+  background-color: #FFFFFF;
+}
+.user_info .user_info_list .customer_number image {
+  width: 20px;
+  display: block;
+}
+.user_info .user_info_list .customer_number .item_title {
+  font-size: 14px;
+  color: #303133;
+  margin-left: 8px;
+  flex: 7;
+}
+.user_info .user_info_list .customer_number .item_right {
+  color: #C2C5CC;
+  font-size: 12px;
+}
+.user_info .user_info_list .call {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+}
+.user_info .user_info_list .call .u-image {
+  display: flex;
+  justify-content: center;
+}
+.user_info .user_info_list .call .u-image image {
+  width: 98px;
+}
+.user_info .user_info_list .call .title {
+  color: #303133;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.user_info .user_info_list .call .number {
+  color: #303133;
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.user_info .user_info_list .call .btn_list {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_info .user_info_list .call .btn_list .cancel {
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  background: #FFFFFF;
+  color: #0E1E75;
+  border-radius: 8px;
+  border: 1px solid #0E1E75;
+  box-sizing: border-box;
+}
+.user_info .user_info_list .call .btn_list .now_call {
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  background: #0E1E75;
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.user_info .user_info_list .customer::after {
+  border: none;
+}
+.user_info .user_info_list .user_info_content .user_info_item {
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+  margin: 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+}
+.user_info .user_info_list .user_info_content .user_info_item image {
+  width: 20px;
+  display: block;
+}
+.user_info .user_info_list .user_info_content .user_info_item .item_title {
+  font-size: 14px;
+  color: #303133;
+  margin-left: 8px;
+  flex: 7;
+}
+

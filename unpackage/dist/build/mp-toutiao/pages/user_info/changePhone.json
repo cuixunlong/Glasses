@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "更换手机号",
+  "backgroundColor": "#F3F4F5",
+  "usingComponents": {
+    "u-verification-code": "/uview-ui/components/u-verification-code/u-verification-code"
+  }
+}

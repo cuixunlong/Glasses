@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "公司发票",
+  "backgroundColor": "#F3F4F5",
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast"
+  }
+}

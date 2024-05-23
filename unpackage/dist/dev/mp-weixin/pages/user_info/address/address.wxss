@@ -1,0 +1,130 @@
+page {
+  background-color: #F3F4F5;
+}
+.administration {
+  font-size: 14px;
+}
+.administration .address_list {
+  background-color: #F3F4F5;
+  padding-bottom: 90px;
+  padding: 12px 15px;
+  height: auto;
+  overflow: hidden;
+}
+.administration .address_list .address_item {
+  margin-bottom: 15px;
+}
+.administration .address_list .address_item .address {
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 8px;
+}
+.administration .address_list .address_item .address .top_info {
+  flex: 7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  padding-bottom: 8px;
+}
+.administration .address_list .address_item .address .top_info .name_num {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.administration .address_list .address_item .address .top_info .name_num .name {
+  color: #303133;
+  font-size: 16px;
+  font-weight: bold;
+}
+.administration .address_list .address_item .address .top_info .name_num .number {
+  margin-left: 4px;
+  color: #999999;
+}
+.administration .address_list .address_item .address .top_info .name_num .default {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.administration .address_list .address_item .address .top_info .name_num .default image {
+  width: 30px;
+  margin: auto 0;
+}
+.administration .address_list .address_item .address .top_info .detailed_address {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #999999;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.administration .address_list .address_item .address .btn_list {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.administration .address_list .address_item .address .btn_list .u-radio__label {
+  font-size: 12px !important;
+}
+.administration .address_list .address_item .address .btn_list .left_check {
+  display: flex;
+  align-items: center;
+}
+.administration .address_list .address_item .address .btn_list .left_check .is_default {
+  margin-left: 4px;
+  color: #333333;
+  font-size: 12px;
+}
+.administration .address_list .address_item .address .btn_list .left_check .check_box {
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  border: 1px solid #BFC4CC;
+  border-radius: 50%;
+  opacity: 1;
+}
+.administration .address_list .address_item .address .btn_list .left_check .is_check {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAz1BMVEUAAAANHnQNHXUNHXQNHHQNHXUNHXQIGm8AF28AAGIMHHQNHXUNHXQKHHMLG3MLFXUNHHQNHXQNGncNHnUNHXQOHXUNHXUNHXQNHnQNHXQNHXMNHXMMG3QMHHUIGXMOHHEOHnX////09fkUJHmQmMDx8fft7vVZY58xP4kRIXf7/P3U1ualq8yKkryCirdfaqRRXZxKVphGUpVBTpI1QowsOoYoNoTh4+3f4ezW2OfN0OLJzeDGyd69wdm3u9WepMeVnMKLk71pc6llb6c9SY9bpngvAAAAIHRSTlMA8erNl/XvHQoFkIK1STgY0YsT+eTh3dnFwJ9yQj8fEn0WeSMAAAFCSURBVDjLhZLncsMgEIRPFkK9ufeAFMdxmlPs9J68/zMFhBBSjMffD7hhF2YPAIUbjs2eZfXMcejCLu0UkwqcHv3XJwZpgCfN7QHZIWgrfdYlGrozqdstoqVlC90xyR5MBzipTtssczb6XI8tjX6a0Xc2GTEzII2en1N6wgsE4Boawwel9JgXhguhRl8z/TkvyhCQNgBdbEXtwVAbgC6JYAh9selzTSQXRYCSPogmHym9IoIfpr+spMEC0cQDlY5Nxjq8JxIDBsX8u2COSx7giRXXpGIAI1HccceXDKAYgUdKR8albza8igCyzaksb7njTARQTPlVKwe3qADFVdcf6yYrkyoQf26j7nhb1XUrBoavFrbFN1H4B7/cwU9bErW0egQV80Rz/hxqOKjTlDvIgSa2h2unezZoiPwgwTgJ/AgUf78OZPJL7eIjAAAAAElFTkSuQmCC);
+  background-size: 100%;
+  border: none;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.administration .address_list .address_item .address .btn_list .right_btn {
+  display: flex;
+  align-items: center;
+}
+.administration .address_list .address_item .address .btn_list .right_btn .btn:first-child {
+  margin-right: 12px;
+}
+.administration .address_list .address_item .address .btn_list .right_btn .btn {
+  width: 52px;
+  height: 24px;
+  background: #FFFFFF;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.administration .address_list .address_item .address .icon {
+  margin: auto 0;
+  font-size: 16px;
+  margin-left: 22px;
+  color: #8F9399;
+}
+.administration .address_list .address_item .address .right-icon {
+  margin: auto 0;
+  margin-right: 15px;
+  margin-left: 28px;
+  padding-bottom: 12px;
+}
+.administration .bg_btn {
+  background-color: #F3F4F5;
+}
+

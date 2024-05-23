@@ -1,0 +1,1 @@
+<view class="user_agreen"><u-parse class="content" vue-id="75f3a23a-1" html="{{userAgreen}}" bind:__l="__l"></u-parse></view>

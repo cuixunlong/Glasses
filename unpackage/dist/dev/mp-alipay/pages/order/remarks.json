@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "备注",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-input": "/uview-ui/components/u-input/u-input"
+  }
+}

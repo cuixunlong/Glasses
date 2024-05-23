@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "活动资讯",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-parse": "/uview-ui/components/u-parse/u-parse"
+  }
+}

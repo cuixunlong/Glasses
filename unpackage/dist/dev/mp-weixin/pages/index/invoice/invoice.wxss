@@ -1,0 +1,54 @@
+page {
+  background-color: #F3F4F5;
+}
+.invoice {
+  background-color: #F3F4F5;
+  padding: 12px 0;
+}
+.invoice .invoice_list {
+  padding: 0 15px;
+}
+.invoice .invoice_list .inactive_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.invoice .invoice_list .inactive_item .invoice_info {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  color: #303133;
+  font-weight: bold;
+}
+.invoice .invoice_list .inactive_item .invoice_info .name {
+  margin-top: 8px;
+  color: #919499;
+  font-size: 14px;
+  font-weight: normal;
+}
+.invoice .invoice_list .btn_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 12px;
+}
+.invoice .invoice_list .btn_list .btn:first-child {
+  margin-right: 12px;
+}
+.invoice .invoice_list .btn_list .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 24px;
+  background: #FFFFFF;
+  border: 1px solid #666666;
+  border-radius: 4px;
+}
+.invoice .bg_color {
+  background-color: #F3F4F5;
+}
+

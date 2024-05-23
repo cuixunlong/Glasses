@@ -1,0 +1,101 @@
+page {
+  background-color: #F3F4F5;
+}
+.payment .icon_pay {
+  font-size: 24px;
+  padding: 18px 12px;
+}
+.payment .payment_num {
+  margin-top: 24px;
+  text-align: center;
+}
+.payment .payment_num .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .payment_num .money {
+  margin-top: 8px;
+  font-size: 32px;
+  color: #DA271E;
+  font-weight: bold;
+}
+.payment .payment_num .money .icon {
+  font-size: 16px;
+  color: #DA271E;
+}
+.payment .pay_way {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 15px;
+  margin-top: 24px;
+}
+.payment .pay_way .yuer_way {
+  box-sizing: border-box;
+}
+.payment .pay_way .yuer_way .yuer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.payment .pay_way .yuer_way .yuer .ye_color {
+  color: #0E1E75;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item {
+  flex: 1;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item .number {
+  color: #919499;
+  font-size: 10px;
+}
+.payment .pay_way .weixin_pay:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.payment .pay_way .weixin_pay {
+  box-sizing: border-box;
+}
+.payment .pay_way .weixin_pay .weixin {
+  display: flex;
+  align-items: center;
+}
+.payment .pay_way .weixin_pay .weixin .vx_color {
+  color: #41B035;
+}
+.payment .pay_way .weixin_pay .weixin .card_color {
+  color: #0E1E75;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item {
+  flex: 7;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item .money {
+  color: #919499;
+  font-size: 10px;
+  margin-top: 2px;
+}
+.payment .pay_way .weixin_pay .weixin .check_box {
+  background-image: url(/static/user_info/checked.png);
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: none;
+  box-sizing: border-box;
+}
+.payment .pay_way .weixin_pay .weixin .no_check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 1px solid #919499;
+  box-sizing: border-box;
+}
+

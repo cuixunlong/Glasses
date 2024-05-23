@@ -1,0 +1,70 @@
+.integral .top {
+  width: 100%;
+  padding: 0 15px;
+  position: fixed;
+  top: 20px;
+}
+.integral .top .integral_money {
+  background-image: url(/static/user_info/wallet_bg.png);
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 12px rgba(14, 30, 117, 0.2);
+  height: 180px;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #0E1E75;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.integral .top .integral_money .balance {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.integral .top .integral_money .integral_money_number {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.integral .integral_list {
+  margin-top: 220px;
+  padding: 0 15px;
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
+.integral .integral_list .integral_item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.integral .integral_list .integral_item .integral_item_left {
+  flex: 7;
+}
+.integral .integral_list .integral_item .integral_item_left .title {
+  color: #303133;
+  font-size: 16px;
+  font-weight: bold;
+}
+.integral .integral_list .integral_item .integral_item_left .time {
+  color: #919499;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.integral .integral_list .integral_item .integral_item_right {
+  display: flex;
+  align-items: center;
+  color: #0E1E75;
+  font-size: 16px;
+}
+.integral .integral_list .integral_item .integral_item_right .icon {
+  font-size: 8px;
+}
+

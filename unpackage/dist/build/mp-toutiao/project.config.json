@@ -1,0 +1,16 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": false,
+        "postcss": false,
+        "minified": false,
+        "newFeature": true
+    },
+    "appid": "tt071e71a39827d15e01",
+    "projectname": "Cake",
+    "condition": {
+        "miniprogram": {
+            "current": -1
+        }
+    }
+}

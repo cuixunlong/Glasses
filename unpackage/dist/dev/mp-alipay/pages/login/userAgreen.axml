@@ -1,0 +1,1 @@
+<view class="user_agreen"><u-parse class="content" vue-id="75e9a210-1" html="{{userAgreen}}" onVueInit="__l"></u-parse></view>

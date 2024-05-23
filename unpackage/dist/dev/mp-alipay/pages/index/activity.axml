@@ -1,0 +1,1 @@
+<view class="activity"><u-parse class="article_content" vue-id="687b8b17-1" html="{{activityDetail.article_content}}" onVueInit="__l"></u-parse><view class="activity_cover"></view></view>

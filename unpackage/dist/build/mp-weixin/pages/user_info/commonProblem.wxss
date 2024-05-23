@@ -1,0 +1,1 @@
+.problem .problem_list .problem_item{padding:16px 20px;font-size:14px;display:flex;align-items:center;border-bottom:1px solid rgba(0,0,0,.1);box-sizing:border-box}.problem .problem_list .problem_item .title{flex:7}

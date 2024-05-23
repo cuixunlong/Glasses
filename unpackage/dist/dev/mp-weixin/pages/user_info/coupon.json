@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "优惠劵",
+  "backgroundColor": "#F3F4F5",
+  "usingComponents": {
+    "u-image": "/uview-ui/components/u-image/u-image"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "邀请记录",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

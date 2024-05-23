@@ -1,0 +1,101 @@
+page {
+  background-color: #F3F4F5;
+}
+.payment .icon_pay {
+  font-size: 24px;
+  padding: 18px 12px;
+}
+.payment .payment_num {
+  margin-top: 24px;
+  text-align: center;
+}
+.payment .payment_num .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .payment_num .money {
+  margin-top: 8px;
+  font-size: 32px;
+  color: #DA271E;
+  font-weight: bold;
+}
+.payment .payment_num .money .icon {
+  font-size: 16px;
+  color: #DA271E;
+}
+.payment .pay_way {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 15px;
+  margin-top: 24px;
+}
+.payment .pay_way .yuer_way {
+  box-sizing: border-box;
+}
+.payment .pay_way .yuer_way .yuer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.payment .pay_way .yuer_way .yuer .ye_color {
+  color: #0E1E75;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item {
+  flex: 1;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .pay_way .yuer_way .yuer .yuer_item .number {
+  color: #919499;
+  font-size: 10px;
+}
+.payment .pay_way .weixin_pay:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.payment .pay_way .weixin_pay {
+  box-sizing: border-box;
+}
+.payment .pay_way .weixin_pay .weixin {
+  display: flex;
+  align-items: center;
+}
+.payment .pay_way .weixin_pay .weixin .vx_color {
+  color: #41B035;
+}
+.payment .pay_way .weixin_pay .weixin .card_color {
+  color: #0E1E75;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item {
+  flex: 7;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item .title {
+  color: #303133;
+  font-size: 14px;
+}
+.payment .pay_way .weixin_pay .weixin .weixin_item .money {
+  color: #919499;
+  font-size: 10px;
+  margin-top: 2px;
+}
+.payment .pay_way .weixin_pay .weixin .check_box {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAAXNSR0IArs4c6QAAAHhQTFRFAAAAAABAAABgDB11DB10Cxx0DR5zDR1yDRx1Dh10DR50Dh51Dh10DR51DR10DR11Dh50Dh51HSx9LDqGM0GKVWCdVWGeWWSgXWeiXWiiho66kZjAlZzCt7zWztHj4ePt5Obw6Ony6Ory8/T49/j6+/v8+/v9////+4HCTgAAAA50Uk5TAAQIV1hcX2CHp6vf8/fFiD3nAAABOElEQVRIx+XX23aCMBAF0ENABGMhp6VVe1VbOv//h32INzCSy2Od970GkllwBgAAVS70kgG11HWpcKpcM6J0fmBZRZqGbQhq2RiyygAAFcPQsRqyAoCcbMhImQNKx/WzUiuUNIwuwxKL2Ae1LWtoJpXGQ/wrki2XYGL9R7ja7Z5T4LoX2SbAdS8iX/Fw3YvI70s0tG4TfTguFwKdLgC6nR/ecF54y41g14W6IXwVeQt0Q/gtIu9hbgg/ZSCn3BB2+0s56caHcyGn3fg6ztLjru7xKH3uegCs/PA5x+RY6XOukTvIaeec1W7vd+4h77bys0n6PD6unu7xF3CXMDk8JMeVOjUgzdM6zqB0fMuGWgEFTeTxtIaFDbomqmdjbNBFVpEMj9Y8RWugiAvzxXkNUPM6eH2Y2fXhD9xM18OSG/ONAAAAAElFTkSuQmCC);
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: none;
+  box-sizing: border-box;
+}
+.payment .pay_way .weixin_pay .weixin .no_check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 1px solid #919499;
+  box-sizing: border-box;
+}
+

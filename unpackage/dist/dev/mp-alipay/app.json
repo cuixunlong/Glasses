@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail",
+    "pages/index/sameDay",
+    "pages/index/activity",
+    "pages/index/invoice/invoice",
+    "pages/index/invoice/company",
+    "pages/index/invoice/personal",
+    "pages/login/login",
+    "pages/login/userAgreen",
+    "pages/sort/sort",
+    "pages/order/order",
+    "pages/order/usCoupon",
+    "pages/order/payment",
+    "pages/order/pay_success",
+    "pages/order/orderDetails",
+    "pages/order/confirm_order",
+    "pages/order/remarks",
+    "pages/user_info/user_info",
+    "pages/user_info/myInfo",
+    "pages/user_info/memberCars",
+    "pages/user_info/carsDetail",
+    "pages/user_info/changePhone",
+    "pages/user_info/detailed",
+    "pages/user_info/anniversary/jinianDay",
+    "pages/user_info/anniversary/newDay",
+    "pages/user_info/anniversary/editDay",
+    "pages/user_info/address/address",
+    "pages/user_info/address/editAddress",
+    "pages/user_info/address/newAddress",
+    "pages/user_info/commonProblem",
+    "pages/user_info/sendProblem",
+    "pages/user_info/coupon",
+    "pages/user_info/wallet",
+    "pages/user_info/user_data",
+    "pages/user_info/invitation",
+    "pages/user_info/invita",
+    "pages/user_info/integral",
+    "pages/index/book/book"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "uni-app",
+    "titleBarColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#BFC4CC",
+    "selectedColor": "#0E1E75",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "static/tabBar/home.png",
+        "activeIcon": "static/tabBar/home_select.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "name": "预约记录",
+        "icon": "static/tabBar/sort.png",
+        "activeIcon": "static/tabBar/sort_select.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "name": "消费记录",
+        "icon": "static/tabBar/order.png",
+        "activeIcon": "static/tabBar/order_select.png"
+      },
+      {
+        "pagePath": "pages/user_info/user_info",
+        "name": "我的",
+        "icon": "static/tabBar/user_info.png",
+        "activeIcon": "static/tabBar/user_info_select.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "plugin-wrapper": "/plugin-wrapper"
+  }
+}

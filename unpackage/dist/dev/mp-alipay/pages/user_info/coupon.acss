@@ -1,0 +1,119 @@
+page {
+  background-color: #F3F4F5;
+  letter-spacing: 0.1px;
+}
+.coupon .coupon_type {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 51px;
+  font-size: 12px;
+  color: #8F9399;
+  background-color: #FFFFFF;
+  z-index: 10000;
+}
+.coupon .coupon_type .coupon_type_item {
+  flex: 1;
+  text-align: center;
+}
+.coupon .coupon_type .coupon_type_item .title {
+  border-radius: 14px;
+}
+.coupon .coupon_type .coupon_type_item .line {
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background: #0E1E75;
+  border-radius: 2rpx;
+}
+.coupon .coupon_list {
+  height: auto;
+  overflow: hidden;
+  padding: 0 15px;
+  margin-top: 63px;
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
+.coupon .coupon_list .invalid_coupon {
+  background-image: url(/static/user_info/coupon2.png) !important;
+}
+.coupon .coupon_list .invalid_coupon .condition {
+  color: #C3C3C4 !important;
+}
+.coupon .coupon_list .coupon_item {
+  width: 100%;
+  background-image: url(/static/user_info/coupon1.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 100px;
+}
+.coupon .coupon_list .coupon_item .coupon_image {
+  width: 17.3%;
+  margin-left: 8px;
+}
+.coupon .coupon_list .coupon_item .info {
+  flex: 7;
+  overflow: hidden;
+  font-size: 12px;
+  margin-left: 8px;
+  color: #8F9399;
+}
+.coupon .coupon_list .coupon_item .info .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #303133;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.coupon .coupon_list .coupon_item .info .type {
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.coupon .coupon_list .coupon_item .state {
+  font-size: 14px;
+  color: #50A4FF;
+  width: 26.6%;
+}
+.coupon .coupon_list .coupon_item .state .money {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+}
+.coupon .coupon_list .coupon_item .state .money .condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 10px;
+  border-radius: 10px;
+  color: #0E1E75;
+  background-color: #FFFFFF;
+  font-weight: normal;
+}
+.coupon .coupon_list .coupon_item .state .money .coupon_desc {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.coupon .active .title {
+  color: #0E1E75;
+  font-size: 28rpx !important;
+}
+

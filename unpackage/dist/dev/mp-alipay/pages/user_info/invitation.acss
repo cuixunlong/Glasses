@@ -1,0 +1,58 @@
+page {
+  background-image: url(https://z3.ax1x.com/2021/10/29/5jxbKP.png);
+  background-size: 100%;
+}
+.tuijian {
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative;
+}
+.tuijian .invita_item {
+  width: 82px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px 0 0 16px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  color: #8F9399;
+  position: absolute;
+  right: 0;
+  top: 110px;
+}
+.tuijian .content {
+  margin-top: 70px;
+}
+.tuijian .content .content_item_title {
+  padding: 0 37px;
+}
+.tuijian .content .content_item_title image {
+  width: 100%;
+  margin-top: 29px;
+}
+.tuijian .content .content_item_bg {
+  padding: 0 30px;
+  margin-top: 176px;
+}
+.tuijian .content .content_item_bg image {
+  width: 100%;
+  margin-top: -80px;
+}
+.tuijian .invitation {
+  margin-top: 45px;
+}
+.tuijian .invitation .btn {
+  width: 308px;
+  height: 54px;
+  background: linear-gradient(180deg, #FE5E86 0%, #FF3D11 100%);
+  background-size: 100%;
+  line-height: 54px;
+  letter-spacing: 4px;
+  border-radius: 27px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+

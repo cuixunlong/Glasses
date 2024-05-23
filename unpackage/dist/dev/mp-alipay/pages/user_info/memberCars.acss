@@ -1,0 +1,48 @@
+.cars .cars_list {
+  padding: 0 15px;
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
+.cars .cars_list .cars_item {
+  margin: 0 auto;
+  margin-top: 18px;
+}
+.cars .cars_list .cars_item .cars_image image {
+  width: 100%;
+  display: block;
+}
+.cars .cars_list .cars_item .cars_name {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #303133;
+  font-size: 14px;
+  font-weight: bold;
+}
+.cars .cars_list .cars_item .cars_name .price {
+  color: #0E1E75;
+  font-size: 16px;
+}
+.cars .cars_list .cars_item .choose_item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cars .cars_list .cars_item .choose_item .recommend {
+  border: 1px solid #A6B5EC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1px 11px;
+  color: #A6B5EC;
+  font-size: 10px;
+}
+.cars .cars_list .cars_item .choose_item .choose {
+  background-color: #0E1E75;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 2px 18px;
+}
+

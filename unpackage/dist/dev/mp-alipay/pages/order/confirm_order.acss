@@ -1,0 +1,232 @@
+page {
+  background-color: #F3F4F5;
+}
+.confirm_order {
+  padding-bottom: 58px;
+}
+.confirm_order .order_item {
+  background-color: #F3F4F5;
+  padding: 12px 15px;
+  padding-bottom: 0;
+}
+.confirm_order .order_item .order_info {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+.confirm_order .order_item .order_info .address_info {
+  padding: 16px 0;
+  color: #606265;
+  font-size: 16px;
+}
+.confirm_order .order_item .order_info .address_info .title {
+  font-size: 12px;
+}
+.confirm_order .order_item .order_info .address_info .user_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #EDEDED;
+  box-sizing: border-box;
+}
+.confirm_order .order_item .order_info .address_info .address {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.confirm_order .order_item .order_info .address_info .address .address_detail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.confirm_order .order_item .order_info .empty_address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #0E1E75;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+.confirm_order .order_item .order_info .empty_address .icon_add {
+  margin-right: 4px;
+}
+.confirm_order .order_item .send_time {
+  font-size: 12px;
+  color: #606265;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+.confirm_order .order_item .send_time .send_top {
+  display: flex;
+  justify-content: space-between;
+}
+.confirm_order .order_item .send_time .send_state {
+  display: flex;
+  justify-content: flex-end;
+  color: #0E1E75;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 4px;
+}
+.confirm_order .order_item .send_time .send_state .item_right {
+  margin-left: 8px;
+}
+.confirm_order .order_item .goods_detail {
+  padding: 16px 0;
+  color: #303133;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.confirm_order .order_item .goods_detail .title {
+  color: #606265;
+  font-size: 12px;
+}
+.confirm_order .order_item .goods_detail .goods_info {
+  display: flex;
+  height: 56px;
+  margin-top: 16px;
+}
+.confirm_order .order_item .goods_detail .goods_info .goods_img {
+  width: 56px;
+  border-radius: 4px;
+}
+.confirm_order .order_item .goods_detail .goods_info .detail_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 16px;
+}
+.confirm_order .order_item .goods_detail .goods_info .detail_right .goods_price {
+  display: flex;
+  justify-content: space-between;
+}
+.confirm_order .order_item .invoice {
+  display: flex;
+  color: #606265;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+}
+.confirm_order .order_item .invoice .invoice_title {
+  flex: 7;
+}
+.confirm_order .order_item .invoice .item_right {
+  margin-left: 8px;
+}
+.confirm_order .order_item .serve_money {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #0E1E75;
+  font-size: 12px;
+  padding: 16px 0;
+}
+.confirm_order .order_item .serve_money .title {
+  flex: 1;
+  color: #606265;
+}
+.confirm_order .order_item .serve_money .check_box {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  background: rgba(14, 30, 117, 0.16);
+  border: 1px solid #0E1E75;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.confirm_order .order_item .serve_money .is_checked {
+  background-image: url(/static/user_info/checked.png);
+  background-size: 100%;
+  border: none;
+}
+.confirm_order .order_item .remarks {
+  display: flex;
+  color: #606265;
+  font-size: 12px;
+  padding: 16px 0;
+}
+.confirm_order .order_item .remarks .remarks_title {
+  flex: 7;
+}
+.confirm_order .order_item .remarks .remarks_content {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.confirm_order .order_item .remarks .item_right {
+  margin-left: 8px;
+}
+.confirm_order .coupon_item {
+  margin-top: 11px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: constant(safe-area-inset-bottom);
+  margin-bottom: env(safe-area-inset-bottom);
+}
+.confirm_order .coupon_item .coupon {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  color: #606265;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+}
+.confirm_order .coupon_item .coupon .title {
+  flex: 7;
+}
+.confirm_order .coupon_item .coupon .item_right {
+  margin-left: 8px;
+}
+.confirm_order .btn_list {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #FFFFFF;
+  font-size: 14px;
+  height: calc(48px+constant(safe-area-inset-bottom));
+  height: calc(48px + env(safe-area-inset-bottom));
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.confirm_order .btn_list .btn_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.confirm_order .btn_list .btn_item .toPay {
+  width: 110px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0E1E75;
+  border-radius: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.confirm_order .btn_list .btn_item .number {
+  color: #303133;
+}
+.confirm_order .btn_list .btn_item .price {
+  color: #F16464;
+  flex: 7;
+}
+
