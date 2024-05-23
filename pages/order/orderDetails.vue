@@ -17,7 +17,7 @@
 						<view class="address_detail">{{orderDetail.address}}</view>
 					</view>
 				</view>
-				<view class="send_time">
+				<!-- <view class="send_time">
 					<view class="send_top">
 						<view class="title">配送时间</view>
 						<view class="order_data" v-if="orderDetail.need_time == '立即配送'">{{orderDetail.create_time}}
@@ -26,24 +26,25 @@
 					</view>
 					<view class="send_state" v-if="orderDetail.need_time == '立即配送'">{{orderDetail.need_time}}</view>
 					<view class="send_state" v-else>{{orderDetail.time}}</view>
-				</view>
+				</view> -->
 				<view class="goods_detail">
 					<view class="title">订单详情</view>
 					<view class="goods_info">
 						<view class="">
-							<u-image :src="orderDetail.order_item[0].goods_cover" mode="widthFix" class="goods_img" />
+							<!-- <u-image :src="orderDetail.order_item[0].goods_cover" mode="widthFix" class="goods_img" /> -->
+							<image :src="orderDetail.goods.logo" mode="heightFix" class="goods_img"></image>
 						</view>
 						<view class="detail_right">
 							<view class="goods_title">
-								{{orderDetail.order_item[0].goods_name}}({{orderDetail.order_item[0].goods_sku_name}})
+								{{orderDetail.goods.name}}
 							</view>
 							<view class="goods_price">
-								<view class="pirce">￥{{orderDetail.order_item[0].goods_price}}</view>
+								<view class="pirce">￥{{orderDetail.goods.price}}</view>
 								<view class="quantity">×1</view>
 							</view>
 						</view>
 					</view>
-					<view class="goods_info" v-if="orderDetail.candle_cover != ''">
+					<!-- <view class="goods_info" v-if="orderDetail.candle_cover != ''">
 						<view class="">
 							<u-image :src="orderDetail.candle_cover" mode="widthFix" class="goods_img" />
 						</view>
@@ -69,16 +70,16 @@
 								<view class="quantity">×{{orderDetail.tableware_num}}</view>
 							</view>
 						</view>
-					</view>
+					</view> -->
 				</view>
 				<view class="remarks">
 					<view class="title">备注</view>
 					<view class="remarks_content">{{remark}}</view>
 				</view>
-				<view class="serve_money">
+				<!-- <view class="serve_money">
 					<view class="title">优惠金额</view>
 					<view class="">-￥{{orderDetail.coupon_money}}</view>
-				</view>
+				</view> -->
 				<view class="total_price">
 					<view class="title">总计</view>
 					<view class="">￥{{orderDetail.amount}}</view>
@@ -90,7 +91,7 @@
 			<view class="right_btn">
 				<view class="btn" v-if="orderDetail.order_status==1" @click="toPay(orderDetail.order_id)">立即付款</view>
 				<view class="btn" v-if="orderDetail.order_status==2" @click="">等待配送中</view>
-				<view class="order_state" v-if="orderDetail.order_status==3" @click="">正在配送中</view>
+				<view class="order_state" v-if="orderDetail.order_status==3" @click="">正在派送中</view>
 				<view class="btn" v-if="orderDetail.order_status==3" @click="sureShow = !sureShow">确认收货
 				</view>
 				<view class="btn" v-if="orderDetail.order_status==4" @click="">已签收</view>
@@ -111,7 +112,20 @@
 			return {
 				show: false,
 				sureShow: false,
-				orderDetail: [],
+				// orderDetail: [],
+				orderDetail: {
+					goods: {
+						logo: '../../static/details/glasses1.jpg',
+						name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+						price: '999'
+					},
+					contact: '张三',
+					mobile: '1368678867877',
+					address: '安徽省合肥市长丰县',
+					amount: '999',
+					order_status_text: '派送中',
+					order_status:3
+				}, //订单信息
 				serve_number: '30.00',
 				remark: '无备注',
 				order_id: '',
@@ -135,7 +149,7 @@
 					}
 					res.data.address = res.data.address.replace(/_/g, ' ')
 					this.orderDetail = res.data
-					console.log(this.orderDetail )
+					console.log(this.orderDetail)
 					if (res.data.remark != '') {
 						this.remark = res.data.remark
 					}
@@ -277,7 +291,7 @@
 					height: 56px;
 
 					image {
-						width: 56px;
+						height: 100%;
 						border-radius: 4px !important;
 					}
 
@@ -290,6 +304,9 @@
 							display: flex;
 							justify-content: space-between;
 							margin-top: 12px;
+							.price{
+								color: #ff1505;
+							}
 						}
 					}
 				}
@@ -358,7 +375,8 @@
 
 			.price {
 				color: #F16464;
-				font-size: 18px;
+				font-size: 20px;
+				font-weight: bold;
 			}
 
 			.right_btn {
@@ -381,7 +399,8 @@
 					background-color: #DBDDEA;
 					box-sizing: border-box;
 				}
-				.order_state{
+
+				.order_state {
 					color: #0E1E75;
 					font-size: 14px;
 					line-height: 32px;

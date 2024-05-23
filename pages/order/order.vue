@@ -20,21 +20,18 @@
 				<navigator :url="'orderDetails?order_id='+item.order_id" hover-class="none">
 					<view class="info">
 						<view class="infoImg">
-							<u-image :src="item.order_item[0].goods_cover" mode="" />
+							<!-- <u-image :src="item.goods_cover" mode="" /> -->
+							<image src="../../static/details/glasses1.jpg" mode=""></image>
 						</view>
 						<view class="info_item">
 							<view class="item_top">
-								<view class="goods_title">{{item.order_item[0].goods_name}}</view>
-								<view class="number">x{{item.order_item[0].goods_num}}</view>
+								<view class="goods_title">{{item.goods_name}}</view>
+								<view class="number">x{{item.goods_num}}</view>
 							</view>
 							<view class="item_bottom">
-								<view class="distribu" v-if="item.need_time != '立即配送'">
-									<view class="send_time">预计送达时间：</view>
-									<view class="">{{item.need_time}}前</view>
-								</view>
-								<view class="distribu" v-else>{{item.need_time}}</view>
+								<view class="distribu">{{item.need_time}}</view>
 								<view class="number">
-									<view>共{{item.order_item[0].goods_num}}件</view>
+									<view>共{{item.goods_num}}件</view>
 									<view class="goods_price">￥{{item.amount}}</view>
 								</view>
 							</view>
@@ -66,7 +63,12 @@
 					limit: '10'
 				},
 				itemindex: 0,
-				orderList: [],
+				orderList: [{
+					goods_name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+					goods_num: 1,
+					need_time:'2024-01-11',
+					amount:999
+				}],
 				totalPages: 1, //总页数
 				status: 'loadmore',
 				iconType: 'circle',
@@ -121,7 +123,7 @@
 				if (uni.getStorageSync('token') === '') {
 					uni.showToast({
 						title: '未登录',
-						icon:'none'
+						icon: 'none'
 					})
 					// setTimeout(()=>{
 					// 	uni.reLaunch({
@@ -330,7 +332,7 @@
 
 					image {
 						width: 100px;
-						height: 80px;
+						height: 100px;
 						border-radius: 6px !important;
 						vertical-align: middle;
 					}

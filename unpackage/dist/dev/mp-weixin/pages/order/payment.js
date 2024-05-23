@@ -181,31 +181,37 @@ var _default = {
     return {
       checked: false,
       weixinCheck: true,
-      order: {},
-      integral: ''
+      order: {
+        amount: '999'
+      },
+      integral: '10888'
     };
   },
   onLoad: function onLoad(option) {
-    var _this = this;
     console.log(option);
     //获取订单详情
-    this.$u.post('/order/getorder', {
-      order_id: option.order_id
-    }).then(function (res) {
-      if (res.error == 0) {
-        _this.order = res.data;
-        _this.order.pay_type = 'wxpay';
-        console.log(_this.order);
-      }
-    });
+    // this.$u.post('/order/getorder', {
+    // 	order_id: option.order_id
+    // }).then(res => {
+    // 	if (res.error == 0) {
+    // 		this.order = res.data
+
+    //
+    // 		this.order.pay_type = 'wxpay'
+    //
+
+    //
+
+    // 		console.log(this.order)
+    // 	}
+    // })
   },
   onShow: function onShow() {
-    var _this2 = this;
-    this.$u.post('/ucenter/getUserInfo').then(function (res) {
-      if (res.error == 0) {
-        _this2.integral = res.data.money;
-      }
-    });
+    // this.$u.post('/ucenter/getUserInfo').then(res => {
+    // 	if (res.error == 0) {
+    // 		this.integral = res.data.money
+    // 	}
+    // })
   },
   methods: {
     chooseCard: function chooseCard() {
@@ -222,15 +228,15 @@ var _default = {
       this.$u.throttle(this.toPay, 2000);
     },
     toPay: function toPay() {
-      var _this3 = this;
+      var _this = this;
       // 微信支付
       this.$u.post('/Payments/payOrder', {
         order_id: this.order.order_id,
         type: this.order.pay_type
       }).then(function (res) {
         if (res.error == 0) {
-          console.log(_this3.order.pay_type == "money");
-          if (_this3.order.pay_type == "money") {
+          console.log(_this.order.pay_type == "money");
+          if (_this.order.pay_type == "money") {
             uni.showToast({
               title: '支付成功',
               duration: 2000,

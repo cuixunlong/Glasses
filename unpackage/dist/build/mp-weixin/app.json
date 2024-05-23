@@ -62,13 +62,13 @@
         "pagePath": "pages/sort/sort",
         "iconPath": "static/tabBar/sort.png",
         "selectedIconPath": "static/tabBar/sort_select.png",
-        "text": "预约记录"
+        "text": "分类"
       },
       {
         "pagePath": "pages/order/order",
         "iconPath": "static/tabBar/order.png",
         "selectedIconPath": "static/tabBar/order_select.png",
-        "text": "消费记录"
+        "text": "订单"
       },
       {
         "pagePath": "pages/user_info/user_info",

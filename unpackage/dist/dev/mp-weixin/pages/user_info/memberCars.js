@@ -98,29 +98,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
-try {
-  components = {
-    uImage: function () {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-image/u-image */ "uview-ui/components/u-image/u-image").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-image/u-image.vue */ 383))
-    },
-  }
-} catch (e) {
-  if (
-    e.message.indexOf("Cannot find module") !== -1 &&
-    e.message.indexOf(".vue") !== -1
-  ) {
-    console.error(e.message)
-    console.error("1. 排查组件名称拼写是否正确")
-    console.error(
-      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
-    )
-    console.error(
-      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
-    )
-  } else {
-    throw e
-  }
-}
 var render = function () {
   var _vm = this
   var _h = _vm.$createElement
@@ -191,16 +168,17 @@ exports.default = void 0;
 var _default = {
   data: function data() {
     return {
-      carsList: []
+      carsList: {
+        charge_money: '1000'
+      }
     };
   },
   onLoad: function onLoad() {
-    var _this = this;
-    this.$u.post('/ucenter/getChargeConfigList').then(function (res) {
-      if (res.error == 0) {
-        _this.carsList = res.data.items;
-      }
-    });
+    // this.$u.post('/ucenter/getChargeConfigList').then(res => {
+    // 	if(res.error == 0){
+    // 		this.carsList = res.data.items
+    // 	}
+    // })
   }
 };
 exports.default = _default;

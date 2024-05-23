@@ -163,17 +163,16 @@ exports.default = void 0;
 var _default = {
   data: function data() {
     return {
-      money: ''
+      money: 10888
     };
   },
   onShow: function onShow() {
-    var _this = this;
     //获取用户余额
-    this.$u.post('/ucenter/getUserInfo').then(function (res) {
-      if (res.error == 0) {
-        _this.money = res.data.money;
-      }
-    });
+    // this.$u.post('/ucenter/getUserInfo').then(res => {
+    // 	if (res.error == 0) {
+    // 		this.money = res.data.money
+    // 	}
+    // })
   },
   methods: {}
 };

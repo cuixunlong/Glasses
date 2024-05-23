@@ -274,30 +274,6 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default = {
   data: function data() {
     return {
@@ -327,7 +303,19 @@ var _default = {
       //默认时间
       defaultInvoice: [0],
       //默认发票
-      orderInfo: [],
+      orderInfo: {
+        goods: {
+          logo: '../../static/details/glasses1.jpg',
+          name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+          price: '999'
+        },
+        address: {
+          contacts: '张三',
+          contacts_phone: '1368678867877',
+          address: '安徽省合肥市长丰县'
+        },
+        Allprice: '999'
+      },
       //订单信息
       from: {},
       //提交的信息
@@ -343,7 +331,6 @@ var _default = {
     };
   },
   onLoad: function onLoad(option) {
-    var _this = this;
     console.log(option.stock);
     if (option.stock != 'undefined') {
       this.stock = option.stock;
@@ -399,20 +386,20 @@ var _default = {
     }
     this.timeList[1] = timeArr;
     var val = uni.getStorageSync('order_key');
-    this.$u.post('/order/previewOrder', val).then(function (res) {
-      if (res.error == 0) {
-        console.log('123');
-        _this.orderInfo = res.data;
-        _this.from = val;
-        _this.from.is_invoice = 0; //发票默认不需要
-        _this.couponNum = '可用' + res.data.CouponList.length + '张';
-        _this.from.address_id = res.data.address.address_id;
-        console.log(_this.from);
-      }
-    });
+    // this.$u.post('/order/previewOrder', val).then(res => {
+    // 	if (res.error == 0) {
+    // 		console.log('123')
+    // 		this.orderInfo = res.data
+    // 		this.from = val
+    // 		this.from.is_invoice = 0 //发票默认不需要
+    // 		this.couponNum = '可用' + res.data.CouponList.length + '张'
+    // 		this.from.address_id = res.data.address.address_id
+    // 		console.log(this.from)
+    // 	}
+    // })
   },
   onShow: function onShow() {
-    var _this2 = this;
+    var _this = this;
     if (uni.getStorageSync('remarks') != '') {
       this.remark = uni.getStorageSync('remarks');
       this.from.remark = this.remark;
@@ -422,14 +409,14 @@ var _default = {
     }
     //监听选择的地址
     uni.$on("address_id", function (res) {
-      _this2.from.address_id = res.address_id; //修改地址id
+      _this.from.address_id = res.address_id; //修改地址id
       if (res.address_id != '') {
-        _this2.$u.post('/ucenter/getUserRegions').then(function (resA) {
+        _this.$u.post('/ucenter/getUserRegions').then(function (resA) {
           if (resA.error == 0) {
-            _this2.orderInfo.address = resA.data.items.filter(function (item) {
+            _this.orderInfo.address = resA.data.items.filter(function (item) {
               return item.address_id == res.address_id;
             });
-            _this2.orderInfo.address = _this2.orderInfo.address[0];
+            _this.orderInfo.address = _this.orderInfo.address[0];
           }
         });
       }
@@ -439,30 +426,30 @@ var _default = {
     //监听选择的发票id
     uni.$on("invoice_id", function (item) {
       console.log(item);
-      _this2.from.is_invoice = item.invoice_id; //开发票的id
+      _this.from.is_invoice = item.invoice_id; //开发票的id
       // 清除监听
       uni.$off("invoice_id");
     });
     //监听选择的优惠卷id
     uni.$on("m_coupon_id", function (res) {
-      _this2.from.coupon_id = res.m_coupon_id; //优惠卷id
-      _this2.from.use_voucher = 0;
+      _this.from.coupon_id = res.m_coupon_id; //优惠卷id
+      _this.from.use_voucher = 0;
       var from = uni.getStorageSync('order_key');
-      _this2.$u.post('/order/previewOrder', from).then(function (now) {
+      _this.$u.post('/order/previewOrder', from).then(function (now) {
         if (now.error == 0) {
           console.log("id");
-          _this2.orderInfo.Allprice = now.data.Allprice;
+          _this.orderInfo.Allprice = now.data.Allprice;
           //过滤出选中的优惠卷
           var arr = now.data.CouponList.filter(function (item) {
             return res.m_coupon_id == item.m_coupon_id;
           });
-          _this2.checked = false;
-          _this2.coupon = -arr[0].coupon_money;
-          _this2.coupon = _this2.keepFull(_this2.coupon);
-          _this2.orderInfo.Allprice = +_this2.orderInfo.Allprice + +_this2.coupon;
-          _this2.orderInfo.Allprice = _this2.keepFull(_this2.orderInfo.Allprice);
-          if (_this2.orderInfo.Allprice <= 0) {
-            _this2.orderInfo.Allprice = 0.01;
+          _this.checked = false;
+          _this.coupon = -arr[0].coupon_money;
+          _this.coupon = _this.keepFull(_this.coupon);
+          _this.orderInfo.Allprice = +_this.orderInfo.Allprice + +_this.coupon;
+          _this.orderInfo.Allprice = _this.keepFull(_this.orderInfo.Allprice);
+          if (_this.orderInfo.Allprice <= 0) {
+            _this.orderInfo.Allprice = 0.01;
           }
         }
       });
@@ -511,32 +498,32 @@ var _default = {
     },
     // 选择账号低用金
     cardCheck: function cardCheck() {
-      var _this3 = this;
+      var _this2 = this;
       this.checked = !this.checked;
       var from = uni.getStorageSync('order_key');
       this.$u.post('/order/previewOrder', from).then(function (res) {
         if (res.error == 0) {
-          _this3.orderInfo = res.data;
-          console.log(_this3.orderInfo.Allprice);
-          var price = parseFloat(_this3.orderInfo.Allprice);
-          var money = parseFloat(_this3.orderInfo.discount_money);
-          if (_this3.checked == true) {
+          _this2.orderInfo = res.data;
+          console.log(_this2.orderInfo.Allprice);
+          var price = parseFloat(_this2.orderInfo.Allprice);
+          var money = parseFloat(_this2.orderInfo.discount_money);
+          if (_this2.checked == true) {
             price = +(price - money).toFixed(2);
-            _this3.from.coupon_id = '';
-            _this3.from.use_voucher = money;
-            if (isFinite(_this3.coupon) == true) {
-              _this3.coupon = '';
+            _this2.from.coupon_id = '';
+            _this2.from.use_voucher = money;
+            if (isFinite(_this2.coupon) == true) {
+              _this2.coupon = '';
             }
           } else {
             // price = +(+price + +money).toFixed(2)
-            _this3.from.use_voucher = 0;
+            _this2.from.use_voucher = 0;
             // if (isFinite(this.coupon) == true) {
             // price = +(price - this.coupon).toFixed(2)
             // }
           }
 
-          _this3.orderInfo.Allprice = price;
-          _this3.orderInfo.Allprice = _this3.keepFull(_this3.orderInfo.Allprice);
+          _this2.orderInfo.Allprice = price;
+          _this2.orderInfo.Allprice = _this2.keepFull(_this2.orderInfo.Allprice);
         }
       });
     },
@@ -568,6 +555,10 @@ var _default = {
     },
     // 去支付
     toPay: function toPay() {
+      uni.navigateTo({
+        url: 'payment?order_id='
+      });
+      return;
       console.log(this.stock);
       if (this.from.address_id == undefined) {
         uni.showToast({

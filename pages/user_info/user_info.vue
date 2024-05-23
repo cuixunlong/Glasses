@@ -166,8 +166,8 @@
 			return {
 				show: false,
 				userInfo: {}, //用户信息
-				couponNum: 0, //优惠卷数量
-				walletNum: 0, //钱包
+				couponNum: 10, //优惠卷数量
+				walletNum: 10888, //钱包
 				dayNum: 0, //纪念日
 				sureShow: false, //未登录显示登录弹窗
 				custNum: '', //客服电话

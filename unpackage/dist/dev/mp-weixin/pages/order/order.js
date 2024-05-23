@@ -233,9 +233,6 @@ var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/
 //
 //
 //
-//
-//
-//
 var _default = {
   data: function data() {
     return {
@@ -245,7 +242,12 @@ var _default = {
         limit: '10'
       },
       itemindex: 0,
-      orderList: [],
+      orderList: [{
+        goods_name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+        goods_num: 1,
+        need_time: '2024-01-11',
+        amount: 999
+      }],
       totalPages: 1,
       //总页数
       status: 'loadmore',

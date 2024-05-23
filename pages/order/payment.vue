@@ -39,37 +39,39 @@
 			return {
 				checked: false,
 				weixinCheck: true,
-				order: {},
-				integral: ''
+				order: {
+					amount: '999'
+				},
+				integral: '10888'
 			}
 		},
 		onLoad(option) {
 			console.log(option)
 			//获取订单详情
-			this.$u.post('/order/getorder', {
-				order_id: option.order_id
-			}).then(res => {
-				if (res.error == 0) {
-					this.order = res.data
+			// this.$u.post('/order/getorder', {
+			// 	order_id: option.order_id
+			// }).then(res => {
+			// 	if (res.error == 0) {
+			// 		this.order = res.data
 
-					// #ifndef MP-TOUTIAO
-					this.order.pay_type = 'wxpay'
-					// #endif
+			// 		// #ifndef MP-TOUTIAO
+			// 		this.order.pay_type = 'wxpay'
+			// 		// #endif
 
-					// #ifdef MP-TOUTIAO
-					this.order.pay_type = 'dypay'
-					// #endif
+			// 		// #ifdef MP-TOUTIAO
+			// 		this.order.pay_type = 'dypay'
+			// 		// #endif
 
-					console.log(this.order)
-				}
-			})
+			// 		console.log(this.order)
+			// 	}
+			// })
 		},
 		onShow() {
-			this.$u.post('/ucenter/getUserInfo').then(res => {
-				if (res.error == 0) {
-					this.integral = res.data.money
-				}
-			})
+			// this.$u.post('/ucenter/getUserInfo').then(res => {
+			// 	if (res.error == 0) {
+			// 		this.integral = res.data.money
+			// 	}
+			// })
 		},
 		methods: {
 			chooseCard() {

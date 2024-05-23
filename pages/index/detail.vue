@@ -57,7 +57,7 @@
 				</view>
 				<view class="right">
 					<view class="cart btn u-line-1">加入购物车</view>
-					<view class="buy btn u-line-1">立即购买</view>
+					<view class="buy btn u-line-1" @click="sure">立即购买</view>
 				</view>
 			</view>
 		</view>
@@ -384,7 +384,10 @@
 			},
 			// 确认
 			sure() {
-				console.log(this.from.tableware_num)
+				uni.navigateTo({
+					url: '../order/confirm_order?stock=' + this.stock
+				})
+				return 
 				// 判断有无登录
 				if (uni.getStorageSync('token') === '') {
 					this.sureShow = true

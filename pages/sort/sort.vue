@@ -20,7 +20,7 @@
 						<view class="item-title">
 							<text>{{item.name}}</text>
 						</view>
-						<view class="item-container">
+						<view class="item-container" @click="toDetail">
 							<view class="thumb-box" v-for="(item1, index1) in item.foods" :key="index1">
 								<image class="item-menu-image" :src="item1.icon" mode=""></image>
 								<view class="item-menu-name">{{item1.name}}</view>
@@ -58,6 +58,12 @@
 			this.getMenuItemTop()
 		},
 		methods: {
+			// 查看详情
+			toDetail(){
+				uni.navigateTo({
+					url:'../index/detail'
+				})
+			},
 			// 点击左边的栏目切换
 			async swichMenu(index) {
 				if(this.arr.length == 0) {

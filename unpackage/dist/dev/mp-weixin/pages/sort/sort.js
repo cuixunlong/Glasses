@@ -229,6 +229,12 @@ var _default = {
     this.getMenuItemTop();
   },
   methods: {
+    // 查看详情
+    toDetail: function toDetail() {
+      uni.navigateTo({
+        url: '../index/detail'
+      });
+    },
     // 点击左边的栏目切换
     swichMenu: function swichMenu(index) {
       var _this = this;

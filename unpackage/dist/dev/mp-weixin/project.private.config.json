@@ -7,6 +7,34 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/user_info/user_info",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/orderDetails",
+          "query": "order_id=undefined",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/order",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/order/confirm_order",
+          "query": "stock=undefined",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/index/book/book",
           "query": "",
           "launchMode": "default",

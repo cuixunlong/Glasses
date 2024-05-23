@@ -1,16 +1,16 @@
 <template>
 	<view class="cars">
 		<view class="cars_list">
-			<view class="cars_item" v-for="(item,index) in carsList" :key="item.id">
+			<view class="cars_item" v-for="(item,index) in 3" :key="item.id">
 				<!-- <navigator :url="'package?product_id='+ item.product_id" hover-class="none"> -->
 				<navigator :url="'carsDetail?id='+item.id" hover-class="none">
 					<view class="cars_image">
-						<!-- <image :src="item.card_cover" mode="widthFix"></image> -->
-						<u-image :src="item.card_cover" mode="widthFix"/>
+						<image :src="item.card_cover" mode="widthFix"></image>
+						<!-- <u-image :src="item.card_cover" mode="widthFix"/> -->
 					</view>
 					<view class="cars_name">
-						<view class="">{{item.charge_money}}元享卡</view>
-						<view class="price">￥{{item.charge_money}}</view>
+						<view class="">{{charge_money}}元享卡</view>
+						<view class="price">￥{{charge_money}}</view>
 					</view>
 					<view class="choose_item">
 						<view class="recommend">推荐</view>
@@ -26,15 +26,17 @@
 	export default{
 		data(){
 			return{
-				carsList:[]
+				carsList:{
+					charge_money:'1000',
+				}
 			}
 		},
 		onLoad() {
-			this.$u.post('/ucenter/getChargeConfigList').then(res => {
-				if(res.error == 0){
-					this.carsList = res.data.items
-				}
-			})
+			// this.$u.post('/ucenter/getChargeConfigList').then(res => {
+			// 	if(res.error == 0){
+			// 		this.carsList = res.data.items
+			// 	}
+			// })
 		}
 	}
 </script>

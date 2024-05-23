@@ -21,16 +21,16 @@
 	export default {
 		data() {
 			return {
-				money:'',
+				money:10888,
 			}
 		},
 		onShow() {
 			//获取用户余额
-			this.$u.post('/ucenter/getUserInfo').then(res => {
-				if (res.error == 0) {
-					this.money = res.data.money
-				}
-			})
+			// this.$u.post('/ucenter/getUserInfo').then(res => {
+			// 	if (res.error == 0) {
+			// 		this.money = res.data.money
+			// 	}
+			// })
 		},
 		methods: {}
 	}

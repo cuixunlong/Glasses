@@ -103,9 +103,6 @@ try {
     uModal: function () {
       return __webpack_require__.e(/*! import() | uview-ui/components/u-modal/u-modal */ "uview-ui/components/u-modal/u-modal").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-modal/u-modal.vue */ 390))
     },
-    uImage: function () {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-image/u-image */ "uview-ui/components/u-image/u-image").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-image/u-image.vue */ 383))
-    },
   }
 } catch (e) {
   if (
@@ -279,12 +276,27 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {
   data: function data() {
     return {
       show: false,
       sureShow: false,
-      orderDetail: [],
+      // orderDetail: [],
+      orderDetail: {
+        goods: {
+          logo: '../../static/details/glasses1.jpg',
+          name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+          price: '999'
+        },
+        contact: '张三',
+        mobile: '1368678867877',
+        address: '安徽省合肥市长丰县',
+        amount: '999',
+        order_status_text: '派送中',
+        order_status: 3
+      },
+      //订单信息
       serve_number: '30.00',
       remark: '无备注',
       order_id: ''

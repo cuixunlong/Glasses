@@ -109,6 +109,7 @@ page {
   margin-left: 16px;
 }
 .confirm_order .order_item .goods_detail .goods_info .detail_right .goods_price {
+  color: #ff1505;
   display: flex;
   justify-content: space-between;
 }

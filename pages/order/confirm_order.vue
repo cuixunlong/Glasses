@@ -5,7 +5,7 @@
 		<view class="order_item">
 			<view class="order_info">
 				<view class="address_info" v-if="orderInfo.address.length != 0">
-					<view class="title">配送地址</view>
+					<view class="title">收货地址</view>
 					<view class="user_info">
 						<view class="name">{{orderInfo.address.contacts}}</view>
 						<view class="number">{{orderInfo.address.contacts_phone}}</view>
@@ -21,7 +21,7 @@
 					<view class="iconfont icon_add icon-xinjain-copy"></view>
 					请增加配送地址
 				</view>
-				<view class="send_time" @click="openSennd">
+				<!-- <view class="send_time" @click="openSennd">
 					<view class="send_top">
 						<view class="title" v-if="sendTime == '立即送出'">配送时间</view>
 						<view class="title" v-else>预约配送时间</view>
@@ -33,9 +33,9 @@
 							<u-icon name="arrow-down" size="40" color="#0E1E75"></u-icon>
 						</view>
 					</view>
-				</view>
+				</view> -->
 				<view class="goods_detail">
-					<view class="title">订单详情</view>
+					<view class="title">商品信息</view>
 					<view class="goods_info">
 						<view class="">
 							<image :src="orderInfo.goods.logo" mode="widthFix" class="goods_img"></image>
@@ -44,33 +44,9 @@
 							<view class="goods_title">{{orderInfo.goods.name}}</view>
 							<view class="goods_price">
 								<view class="pirce">
-									{{orderInfo.TasteSelect.name == undefined?'':orderInfo.TasteSelect.name}}({{orderInfo.goods.sku.specs_name}})
+									￥{{orderInfo.goods.price}}
 								</view>
 								<view class="quantity">×1</view>
-							</view>
-						</view>
-					</view>
-					<view class="goods_info" v-if="orderInfo.CandleSelect == undefined">
-						<view class="">
-							<image :src="orderInfo.CandleSelect.cover_img" mode="widthFix" class="goods_img"></image>
-						</view>
-						<view class="detail_right">
-							<view class="goods_title">{{orderInfo.CandleSelect.name}}</view>
-							<view class="goods_price">
-								<view class="pirce">￥{{orderInfo.CandleSelect.price}}</view>
-								<view class="quantity">×1</view>
-							</view>
-						</view>
-					</view>
-					<view class="goods_info">
-						<view class="">
-							<image src="../../static/user_info/plate.png" mode="widthFix" class="goods_img"></image>
-						</view>
-						<view class="detail_right">
-							<view class="goods_title">圆形餐盘</view>
-							<view class="goods_price">
-								<view class="pirce">￥{{orderInfo.TablewarePrice}}</view>
-								<view class="quantity">×{{orderInfo.TablewareNum}}</view>
 							</view>
 						</view>
 					</view>
@@ -84,11 +60,11 @@
 						<u-icon name="arrow-right" size="30" color="#8F9399"></u-icon>
 					</view>
 				</view>
-				<view class="serve_money">
+				<!-- <view class="serve_money">
 					<view class="title">账号抵用金</view>
 					<view class="serve_number">-￥{{orderInfo.discount_money}}元</view>
 					<view class="check_box" @click="cardCheck" :class="{is_checked:checked == true}"></view>
-				</view>
+				</view> -->
 				<navigator url="remarks" hover-class="none">
 					<view class="remarks">
 						<view class="remarks_title">备注</view>
@@ -137,7 +113,19 @@
 				number: 1, //数量
 				defaultTime: [0, 0], //默认时间
 				defaultInvoice: [0], //默认发票
-				orderInfo: [], //订单信息
+				orderInfo: {
+					goods: {
+						logo: '../../static/details/glasses1.jpg',
+						name: 'BOLON暴龙眼镜框商务休闲眉框合金光学镜架BJ7130',
+						price: '999'
+					},
+					address: {
+						contacts: '张三',
+						contacts_phone: '1368678867877',
+						address: '安徽省合肥市长丰县'
+					},
+					Allprice: '999'
+				}, //订单信息
 				from: {}, //提交的信息
 				stock: '',
 				list: [{
@@ -210,17 +198,17 @@
 			this.timeList[1] = timeArr
 
 			var val = uni.getStorageSync('order_key');
-			this.$u.post('/order/previewOrder', val).then(res => {
-				if (res.error == 0) {
-					console.log('123')
-					this.orderInfo = res.data
-					this.from = val
-					this.from.is_invoice = 0 //发票默认不需要
-					this.couponNum = '可用' + res.data.CouponList.length + '张'
-					this.from.address_id = res.data.address.address_id
-					console.log(this.from)
-				}
-			})
+			// this.$u.post('/order/previewOrder', val).then(res => {
+			// 	if (res.error == 0) {
+			// 		console.log('123')
+			// 		this.orderInfo = res.data
+			// 		this.from = val
+			// 		this.from.is_invoice = 0 //发票默认不需要
+			// 		this.couponNum = '可用' + res.data.CouponList.length + '张'
+			// 		this.from.address_id = res.data.address.address_id
+			// 		console.log(this.from)
+			// 	}
+			// })
 		},
 		onShow() {
 			if (uni.getStorageSync('remarks') != '') {
@@ -269,7 +257,7 @@
 						this.coupon = this.keepFull(this.coupon)
 						this.orderInfo.Allprice = +this.orderInfo.Allprice + +this.coupon
 						this.orderInfo.Allprice = this.keepFull(this.orderInfo.Allprice)
-						if(this.orderInfo.Allprice <=0){
+						if (this.orderInfo.Allprice <= 0) {
 							this.orderInfo.Allprice = 0.01
 						}
 					}
@@ -338,7 +326,7 @@
 							// price = +(+price + +money).toFixed(2)
 							this.from.use_voucher = 0
 							// if (isFinite(this.coupon) == true) {
-								// price = +(price - this.coupon).toFixed(2)
+							// price = +(price - this.coupon).toFixed(2)
 							// }
 						}
 						this.orderInfo.Allprice = price
@@ -374,6 +362,10 @@
 			},
 			// 去支付
 			toPay() {
+				uni.navigateTo({
+					url: 'payment?order_id=' 
+				})
+				return
 				console.log(this.stock)
 				if (this.from.address_id == undefined) {
 					uni.showToast({
@@ -546,6 +538,7 @@
 						.goods_title {}
 
 						.goods_price {
+							color: #ff1505;
 							display: flex;
 							justify-content: space-between;
 						}

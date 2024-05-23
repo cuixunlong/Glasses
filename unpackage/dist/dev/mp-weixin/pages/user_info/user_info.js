@@ -346,9 +346,9 @@ var _default = {
       show: false,
       userInfo: {},
       //用户信息
-      couponNum: 0,
+      couponNum: 10,
       //优惠卷数量
-      walletNum: 0,
+      walletNum: 10888,
       //钱包
       dayNum: 0,
       //纪念日
